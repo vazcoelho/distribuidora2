@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização de Compra</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <header>
+        <h1>Finalização de Compra</h1>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Seu Carrinho de Compras</h2>
+            <!-- Aqui você pode listar os itens no carrinho do usuário -->
+        </section>
+        <section class="payment">
+            <h2>Informações de Pagamento</h2>
+            <form action="process_payment.php" method="POST">
+                <!-- Campos de informações de pagamento, como nome, número do cartão, data de validade, etc. -->
+                <!-- Certifique-se de incluir elementos de formulário adequados e campos de entrada -->
+                <label for="card_number">Número do Cartão de Crédito:</label>
+                <input type="text" id="card_number" name="card_number" required>
+
+                <!-- Outros campos de pagamento -->
+
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé da página, informações de contato, links úteis, etc. -->
+    </footer>
+</body>
+</html>

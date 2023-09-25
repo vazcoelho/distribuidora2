@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina inicial</title>
+<style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .navbar {
+            background-color: #e19004;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 40px;
+
+            
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        .search-button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .shortcuts {
+            display: flex;
+            gap: 10px;
+            padding: 50px 50px;
+            margin-bottom: 50px;
+
+        }
+        .shortcut {
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .product-container {
+            width: 97.9%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-image: url("drinker.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1000px;
+            
+        }
+        .product-column {
+            flex: 1;
+            padding: 0 10px;
+            padding-left: 100px;   
+            padding-top: 17px;      
+        }
+        .product {
+            background-color: #dc8c0c;
+            border: 1px solid #b45a5a;
+            box-shadow: #333;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 390px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .product-name {
+            font-weight: bold;
+        }
+        .product-price {
+            color: #333;
+            margin-top: 10px;
+        }
+        .product3{
+            background-color: #dc8c0c;
+            border: 1px solid #b45a5a;
+            box-shadow: #333;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 390px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           
+
+        }
+        
+        
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">distribuidora de bebidas</div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Pesquisar produtos">
+            <button class="search-button">Pesquisar</button>
+        </div>
+        <div class="shortcuts">
+            <a href="#" class="shortcut">Opções</a>
+            <a href="#" class="shortcut">Perfil</a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="product-column">
+            <div class="product">
+                <img src="coca.jpeg" alt="Produto 1">
+                <div class="product-name">coca-cola 2L</div>
+                <div class="product-price">$14.00</div>
+                <input type="button" value="Comprar">
+            </div>
+        </div>
+        <div class="product-column">
+            <div class="product">
+                <img src="skola.jpeg" alt="Produto 2">
+                <div class="product-name">skol pilsen</div>
+                <div class="product-price">$10.00</div>
+                <input type="button" value="Comprar">
+            </div>
+        </div>
+        <div class="product-column3">
+            <div class="product3">
+                <img src="ice.jpeg" alt="Produto 1">
+                <div class="product-name">coca-cola 2L</div>
+                <div class="product-price">$14.00</div>
+                <input type="button" value="Comprar">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

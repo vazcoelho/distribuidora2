@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil de usuario</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        main{
+            width: 100%;
+            max-height: 1000px;
+            background-image: url("drinka.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        header {
+            background-color: #ef7d0a;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            margin-top: 300px;
+            background-color: #fe5900;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #cb8e52;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 320px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+        
+    </style>
+</head>
+<main>
+<body>
+    <header>
+        <h1>Perfil do Usuário</h1>
+    </header>
+    
+    <div class="container">
+        <img src="user.jpg" alt="Foto do Usuário" class="profile-img">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="Nome do Usuário" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="email@example.com" required>
+
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </div>
+    </main>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <title>pagina inicial</title>
 <style>
         body{
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -17,9 +17,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 40px 40px;
-
-            
+            padding: 40px 40px; 
+        }
+        main{
+            width: 100%;
+            background-image: url("drinker.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .logo {
             font-size: 24px;
@@ -66,12 +70,9 @@
             width: 97.9%;
             display: flex;
             justify-content: space-between;
-            padding: 20px;
-            background-image: url("drinker.jpeg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 1000px;
-            
+            padding: 80px;
+            height: 500px;
+            overflow: hidden;
         }
         .product-column {
             flex: 1;
@@ -86,9 +87,14 @@
             text-align: center;
             border-radius: 5px;
             margin-bottom: 20px;
-            width: 390px;
-            padding-top: 10px;
+            /* width: 390px; */
+            width: 60%;
+            padding-top: 20px;
             padding-bottom: 10px;
+        }
+
+        .product img{
+            max-height: 250px;
         }
         .product-name {
             font-weight: bold;
@@ -96,19 +102,6 @@
         .product-price {
             color: #333;
             margin-top: 10px;
-        }
-        .product3{
-            background-color: #dc8c0c;
-            border: 1px solid #b45a5a;
-            box-shadow: #333;
-            text-align: center;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            width: 390px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-           
-
         }
         
         
@@ -126,6 +119,9 @@
             <a href="#" class="shortcut">Perfil</a>
         </div>
     </div>
+    <main>
+
+    
 
     <div class="product-container">
         <div class="product-column">
@@ -144,14 +140,41 @@
                 <input type="button" value="Comprar">
             </div>
         </div>
-        <div class="product-column3">
-            <div class="product3">
+        <div class="product-column">
+            <div class="product">
                 <img src="ice.jpeg" alt="Produto 1">
-                <div class="product-name">coca-cola 2L</div>
-                <div class="product-price">$14.00</div>
+                <div class="product-name">51-ice 500ml</div>
+                <div class="product-price">$19.00</div>
                 <input type="button" value="Comprar">
             </div>
         </div>
     </div>
+    <div class="product-container">
+        <div class="product-column">
+            <div class="product">
+                <img src="belvedere.jpeg" alt="Produto 1">
+                <div class="product-name">VODKA - Belvedere 700ML</div>
+                <div class="product-price">$140.00</div>
+                <input type="button" value="Comprar">
+            </div>
+        </div>
+        <div class="product-column">
+            <div class="product">
+                <img src="whiskeybar.jpeg" alt="Produto 2">
+                <div class="product-name">WHISKEY -blue Label 750ml </div>
+                <div class="product-price">R$288.00</div>
+                <input type="button" value="Comprar">
+            </div>
+        </div>
+        <div class="product-column">
+            <div class="product">
+                <img src="vinho.jpeg" alt="Produto 1">
+                <div class="product-name">VINHO - Campanero</div>
+                <div class="product-price">$76.00</div>
+                <input type="button" value="Comprar">
+            </div>
+        </div>
+    </div>
+    </main>
 </body>
 </html>

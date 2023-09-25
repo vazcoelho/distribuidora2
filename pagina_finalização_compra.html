@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("fundo.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            height: 1000px;
+
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(255, 123, 0);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin-top: 200px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-description {
+            margin-top: 20px;
+        }
+
+        .payment-method {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .payment-button {
+            padding: 10px 20px;
+            background-color: #e09a3e;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkout-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 30px;
+            background-color: #bd9d6f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Finalização de Compra</h1>
+        <img class="product-image" src="caminho-da-imagem-do-produto.jpg" alt="Imagem do Produto">
+        <div class="product-description">
+            <h2>Nome do Produto</h2>
+            <p>Descrição detalhada do produto aqui...</p>
+        </div>
+        <div class="payment-method">
+            <button class="payment-button" id="cartao-button">Pagar com Cartão</button>
+            <button class="payment-button" id="boleto-button">Pagar com Boleto</button>
+        </div>
+        <button class="checkout-button">Finalizar Compra</button>
+    </div>
+</body>
+</html>
